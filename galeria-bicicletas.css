@@ -1,26 +1,19 @@
-.compra {
+.bicicletas {
   background: #fff;
 }
 
-.compra h2 {
-  font-size: 64px;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+.bicicletas h2 {
   padding: 200px 0px 0px 90px;
 }
 
-.compra h2 span {
-  color: #ffbf00;
-}
-
-.galeria img {
+.galeria-bicicletas img {
   max-width: 100%;
   height: 480px;
   border-radius: 4px;
   object-fit: cover;
 }
 
-.galeria {
-  list-style: none;
+.galeria-bicicletas {
   display: flex;
   gap: 40px;
   padding: 0px 20px;

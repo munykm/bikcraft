@@ -1,0 +1,43 @@
+.titulos {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+}
+
+.paragrafos {
+  font-size: 24px;
+  line-height: 1.54;
+  font-family: "Roboto", sans-serif;
+}
+
+.botao-amarelo {
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0, 1px, 2px, rgb(0, 0, 0, 0.1);
+  color: #332200;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 15px;
+  width: 175px;
+  border-radius: 4px;
+}
+
+.cor-b0 {
+  color: #000;
+}
+
+.cor-b1 {
+  color: #fff;
+}
+
+.cor-c5 {
+  color: #b2b2b2;
+}
+
+.cor-a1 {
+  color: #ffbf00;
+}

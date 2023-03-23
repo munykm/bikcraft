@@ -1,3 +1,17 @@
 @import "./header.css";
+@import "./utilitario.css";
 @import "./intro.css";
-@import "./compra.css";
+@import "./galeria-bicicletas.css";
+
+body {
+  margin: 0px;
+  background: #000;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
