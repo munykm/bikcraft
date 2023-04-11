@@ -2,10 +2,16 @@
 @import "./utilitario.css";
 @import "./intro.css";
 @import "./galeria-bicicletas.css";
+@import "./tecnologia.css";
+@import "./parceiros.css";
+@import "./depoimento.css";
+@import "./seguros.css";
+@import "./footer.css";
 
 body {
   margin: 0px;
   background: #000;
+  max-width: auto;
 }
 
 li {
@@ -14,4 +20,9 @@ li {
 
 a {
   text-decoration: none;
+}
+
+img[src$=".jpg"] {
+  max-width: 100%;
+  border-radius: 4px;
 }

@@ -1,20 +1,92 @@
 .bicicletas {
   background: #fff;
+  padding: 5px 0px 200px 0px;
+}
+
+.bicicletasconteudo {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bicicletas ul {
+  display: flex;
+  gap: 40px;
+  max-width: 1400px;
+  padding: 0px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
 }
 
 .bicicletas h2 {
-  padding: 200px 0px 0px 90px;
+  padding-top: 130px;
 }
 
-.galeria-bicicletas img {
-  max-width: 100%;
-  height: 480px;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-.galeria-bicicletas {
+.bicicletas h3 {
   display: flex;
-  gap: 40px;
-  padding: 0px 20px;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 0px -20px;
 }
+
+.bicicletas h3::before {
+  content: "";
+  display: inline-block;
+  width: 6%;
+  height: 8px;
+  background: #ffbf00;
+  margin-right: 8px;
+}
+
+.bicicletas a:hover h3:before {
+  width: 10%;
+  transition: 0.2s;
+}
+
+.bicicletas li span {
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.bicicletas img {
+  height: 470px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* Responsivo */
+
+@media (max-width: 1200px) {
+  .bicicletas h2 {
+    font-size: 48px;
+  }
+
+  .bicicletas img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .bicicletas img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bicicletas img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 950px) {
+  .bicicletas ul {
+    overflow-x: auto;
+  }
+}
+
+/* Resolver responsivo da galeria de imagens bicicletas */

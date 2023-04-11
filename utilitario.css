@@ -1,13 +1,26 @@
-.titulos {
+.titulos-g {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 64px;
   line-height: 1.2;
+}
+
+.titulos-m {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
 }
 
 .paragrafos {
   font-size: 24px;
   line-height: 1.54;
   font-family: "Roboto", sans-serif;
+}
+
+.preco {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .botao-amarelo {
@@ -26,6 +39,59 @@
   border-radius: 4px;
 }
 
+.botao-cinza {
+  display: inline-block;
+  background: #2e2e2e;
+  box-shadow: 0, 1px, 2px, rgb(0, 0, 0, 0.1);
+  color: #cccccc;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 15px 10px;
+  width: 175px;
+  border-radius: 4px;
+}
+
+.ponto {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  color: #f2a50c;
+}
+
+.seguro-valor {
+  font-family: "Poppins";
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.seguro-mensal {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: #9c9c9c;
+}
+
+.footer-titulo {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-txt {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  color: #b2b2b2;
+}
+
 .cor-b0 {
   color: #000;
 }
@@ -38,6 +104,10 @@
   color: #b2b2b2;
 }
 
-.cor-a1 {
+.cor-c8 {
+  color: #595959;
+}
+
+.c {
   color: #ffbf00;
 }
