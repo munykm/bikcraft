@@ -1,136 +1,164 @@
-.seguros-bg {
-  background: #111;
-}
-
-.seguros {
-  background: #111;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 0px 0px 60px 0px;
-  margin-left: 90px;
-  box-sizing: border-box;
-  max-width: 1200px;
-}
-
 .seguros-conteudo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
+  margin-top: -40px;
+  padding-bottom: 60px;
+  max-width: 1200px;
 }
 
 .seguro-prata {
   background: #000;
-  padding: 0px 25px 20px 40px;
-  list-style: none;
+  border-radius: 4px;
   display: grid;
   grid-template-columns: 1fr auto;
+  padding: 0px 30px 0px 40px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 .seguro-prata h3 {
-  font-family: "Poppins";
-  font-size: 36px;
-  line-height: 48px;
-  color: #9c9c9c;
   text-transform: uppercase;
+  margin-left: 18px;
 }
 
-.seguro-valor {
-  display: block;
+.seguro-prata span {
   grid-column: 2;
+  margin-top: 35px;
+  display: block;
+}
+
+.seguro-prata p {
+  grid-column: 2;
+  margin-top: -60px;
   text-align: right;
-  margin-top: 32px;
-  margin-left: 170px;
-}
-
-.seguro-prata .seguro-mensal {
-  display: block;
-  grid-column: 2;
-  margin-left: 235px;
-  margin-top: -40px;
 }
 
 .seguro-prata li {
-  font-family: "Roboto";
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
+  grid-column: 1;
+  margin-left: -50px;
   padding: 10px;
-  margin-left: -48px;
-  display: flex;
-  align-items: center;
 }
 
-.seguro-prata li::before {
-  content: "";
-  display: inline-block;
-  width: 13px;
-  height: 9px;
-  background-image: url(img/icones/lista.svg);
-  position: absolute;
-  left: 110px;
+.seguro-prata ul {
+  margin-top: -50px;
 }
 
 .seguro-prata a {
   grid-column: 1;
+  margin-top: -20px;
+  margin-left: 18px;
 }
+
 .seguro-prata a:hover {
   background: #404040;
 }
 
 .seguro-ouro {
   background: #000;
-  padding: 0px 25px 20px 60px;
-  list-style: none;
+  border-radius: 4px;
   display: grid;
   grid-template-columns: 1fr auto;
+  padding: 0px 30px 30px 40px;
 }
 
-.seguro-ouro h3 {
-  font-family: "Poppins";
-  font-size: 36px;
-  line-height: 48px;
-  color: #ffbf00;
-  text-transform: uppercase;
-}
-
-.seguro-valor {
-  display: block;
+.seguro-ouro span {
   grid-column: 2;
+  margin-top: 35px;
+  display: block;
+}
+
+.seguro-ouro p {
+  grid-column: 2;
+  margin-top: -80px;
   text-align: right;
-  margin-top: 32px;
-  margin-left: 170px;
-}
-
-.seguro-mensal {
-  display: block;
-  grid-column: 2;
-  margin-left: 244px;
-  margin-top: -40px;
 }
 
 .seguro-ouro li {
-  font-family: "Roboto";
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
+  grid-column: 1;
+  margin-left: -50px;
   padding: 10px;
-  margin-left: -48px;
-  display: flex;
-  align-items: center;
 }
 
-.seguro-ouro li::before {
-  content: "";
-  display: inline-block;
-  width: 13px;
-  height: 9px;
-  background-image: url(img/icones/lista.svg);
-  position: absolute;
-  left: 715px;
+.seguro-ouro ul {
+  margin-top: -50px;
+  margin-bottom: 40px;
 }
 
 .seguro-ouro a {
   grid-column: 1;
+  margin-top: -20px;
+  margin-left: 18px;
+}
+
+.seguro-ouro a:hover {
+  background: #f2a50c;
+}
+
+.seguro-ouro h3 {
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  margin-left: 18px;
+}
+
+/* Responsivo */
+
+@media (max-width: 1200px) {
+  .seguros {
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 960px) {
+  .seguro-prata span,
+  .seguro-ouro span {
+    font-size: 34px;
+  }
+
+  .seguro-prata p {
+    margin-top: -65px;
+  }
+
+  .seguro-ouro li {
+    margin-left: -55px;
+  }
+}
+
+@media (max-width: 800px) {
+  .seguros h2 {
+    font-size: 33px;
+  }
+
+  .seguros {
+    margin-left: -60px;
+    margin-right: 20px;
+  }
+
+  .seguros-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .seguro-prata {
+    padding: 60px 40px 40px 40px;
+  }
+  .seguro-prata h3 {
+    font-size: 24px;
+    margin-top: -40px;
+  }
+
+  .seguro-prata span,
+  .seguro-ouro span {
+    font-size: 24px;
+  }
+
+  .seguro-prata a {
+    margin-top: 10px;
+  }
+  .seguro-ouro {
+    padding: 0px 40px 40px 40px;
+  }
+  .seguro-ouro h3 {
+    font-size: 24px;
+  }
 }

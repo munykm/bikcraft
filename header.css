@@ -1,5 +1,6 @@
 .header-bg {
   background: #000;
+  max-width: 1500px;
 }
 
 .header {
@@ -92,9 +93,9 @@
 
 @media (max-width: 500px) {
   .header {
-    gap: 60px;
+    gap: -100px;
   }
   .header-menu {
-    margin-top: -40px;
+    margin-top: 0px;
   }
 }

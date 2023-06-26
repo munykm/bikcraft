@@ -1,0 +1,135 @@
+.nimbus-titulo p {
+  margin-bottom: -40px;
+}
+
+.bike-titulo h1 {
+  margin-top: -37px;
+}
+
+.bike-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0px 70px 40px 90px;
+}
+
+.bicicletas-galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bicicletas-galeria img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bicicletas-galeria2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bt-tag {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.botao-amarelo {
+  grid-row: span 2;
+}
+
+.bt-tag span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
+  background: #000;
+  border-radius: 4px;
+  margin-top: -20px;
+}
+
+.tag {
+  margin-bottom: -20px;
+}
+
+.info-bg {
+  background: #000;
+  padding: 20px 0px 10px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-conteudo img {
+  width: 24px;
+  height: 22px;
+  margin-bottom: -15px;
+}
+.info-conteudo ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.info-conteudo h3 {
+  margin-bottom: -5px;
+}
+
+.info-conteudo p {
+  width: 30ch;
+  margin-bottom: 20px;
+}
+
+.fichatecnica-bg {
+  background: #000;
+  padding: 20px 30px 10px 0px;
+  margin-top: 20px;
+}
+
+.fichatecnica-conteudo li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #111;
+}
+
+.bike-galeria {
+  padding: 0px 60px 0px 60px;
+}
+
+.bike-galeria img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bicicletastitulo h2 {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seguroimg img {
+  height: 165%;
+  width: 95%;
+  display: block;
+  object-fit: cover;
+  margin-top: -150px;
+}
+
+.footer2 {
+  margin-top: 100px;
+}
+
+.footer2 span {
+  margin-left: 90px;
+  margin-bottom: 30px;
+}

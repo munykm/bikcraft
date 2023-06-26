@@ -1,28 +1,281 @@
-@import "./header.css";
-@import "./utilitario.css";
-@import "./intro.css";
-@import "./galeria-bicicletas.css";
-@import "./tecnologia.css";
-@import "./parceiros.css";
-@import "./depoimento.css";
-@import "./seguros.css";
-@import "./footer.css";
+@import "header.css";
+@import "intro.css";
+@import "galeria-bicicletas.css";
+@import "tecnologia.css";
+@import "parceiros.css";
+@import "depoimento.css";
+@import "seguros.css";
+@import "footer.css";
+@import "utilitario.css";
+@import "termos.css";
+@import "bicicleta-vitrine.css";
+@import "seg.css";
+@import "nimbus.css";
+@import "contato.css";
+@import "orcamento.css";
 
 body {
   margin: 0px;
-  background: #000;
-  max-width: auto;
+  background: #111;
 }
 
 li {
   list-style: none;
 }
 
+img[src$=".jpg"] {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+dd {
+  margin: 0px;
+}
+
 a {
   text-decoration: none;
 }
 
-img[src$=".jpg"] {
-  max-width: 100%;
+/* Fonte Poppins */
+
+.titulo-gg {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.titulo-pp-g {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.titulo-pp-m {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.titulo-pp-p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.titulo-pp-pp {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.txt-pop-p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.txt-pp {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Fonte Roboto */
+
+.txt-gg {
+  font-family: "Roboto";
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.txt-g {
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.txt-m {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.txt-p {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.txt-pp {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Elementos */
+
+.ponto {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  line-height: 1.2;
+  color: #f2a50c;
+}
+
+@media (max-width: 800px) {
+  .ponto {
+    font-size: 40px;
+  }
+}
+
+.botao-amarelo {
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0, 1px, 2px, rgb(0, 0, 0, 0.1);
+  color: #332200;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 15px;
+  width: 175px;
   border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .botao-amarelo {
+    width: 150px;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+.botao-amarelo-seta {
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  box-shadow: 0, 1px, 2px, rgb(0, 0, 0, 0.1);
+  color: #332200;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 15px;
+  width: 175px;
+  border-radius: 4px;
+}
+
+.botao-cinza {
+  display: inline-block;
+  background: #2e2e2e;
+  box-shadow: 0, 1px, 2px, rgb(0, 0, 0, 0.1);
+  color: #cccccc;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 15px 10px;
+  width: 175px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Cores */
+
+.cor-br {
+  color: #fff;
+}
+
+.cor-pr {
+  color: #000;
+}
+
+.cor-pr2 {
+  color: #111;
+}
+
+.cor-pr3 {
+  color: #404040;
+}
+
+.cor-pr4 {
+  color: #2e2e2e;
+}
+
+.cor-cz1 {
+  color: #b2b2b2;
+}
+
+.cor-cz2 {
+  color: #595959;
+}
+
+.cor-cz3 {
+  color: #9c9c9c;
+}
+
+.cor-cz4 {
+  color: #cccccc;
+}
+
+.cor-cz5 {
+  color: #717171;
+}
+
+.cor-am {
+  color: #ffbf00;
+}
+
+.cor-am1 {
+  color: #ffbb00;
+}
+
+.background {
+  background: #111;
+}
+
+.titulo-pstn {
+  padding: 40px 0px 0px 90px;
+}
+
+.tag-preco1 {
+  background: #000;
+  border-radius: 2px;
+  padding: 10px;
+  width: 67px;
+}
+
+.footer-pstn {
+  padding: 80px 0px 60px 0px;
+  margin-left: -40px;
+  margin-top: -20px;
+}
+
+.footer-li-pstn li {
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  margin-left: -40px;
+}
+
+.bike-titulo {
+  padding: 20px 0px 40px 90px;
 }

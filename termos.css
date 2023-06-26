@@ -1,0 +1,110 @@
+.termos-intro {
+  position: relative;
+}
+
+.termos-intro::before {
+  content: "";
+  width: 52px;
+  height: 52px;
+  background-image: url(img/dec/top-right.svg);
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+
+.termos-intro h1 {
+  margin-top: -20px;
+}
+
+.termos-conteudo {
+  padding: 60px 0px 60px 90px;
+  background: #fff;
+}
+
+.termos-conteudo h2 {
+  margin-top: 40px;
+}
+
+.termos-conteudo p {
+  margin-right: 600px;
+  max-width: 75ch;
+}
+
+/* Responsivo */
+
+@media (max-width: 1360px) {
+  .termos-conteudo p {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .termos-intro {
+    padding: 40px 0px 0px 20px;
+  }
+
+  .termos-intro p {
+    font-size: 18px;
+  }
+
+  .termos-conteudo p {
+    margin-right: 20px;
+  }
+
+  .termos-intro h1 {
+    font-size: 48px;
+  }
+
+  .termos-intro::before {
+    bottom: 60px;
+    right: 40px;
+  }
+
+  .termos-conteudo {
+    padding: 60px 0px 60px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .termos-intro {
+    padding: 40px 0px 0px 20px;
+  }
+
+  .termos-intro p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .termos-intro h1 {
+    font-size: 32px;
+  }
+
+  .termos-intro::before {
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .termos-conteudo {
+    padding: 60px 0px 60px 20px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-contato {
+    padding: 80px 0px 60px 0px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .termos-intro p {
+    margin-top: -10px;
+  }
+
+  .termos-intro::before {
+    bottom: 20px;
+    right: 20px;
+  }
+}

@@ -19,7 +19,6 @@
   padding: 0px 20px;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto;
 }
 
 .bicicletas h2 {
@@ -36,14 +35,14 @@
 .bicicletas h3::before {
   content: "";
   display: inline-block;
-  width: 6%;
+  width: 4%;
   height: 8px;
   background: #ffbf00;
   margin-right: 8px;
 }
 
 .bicicletas a:hover h3:before {
-  width: 10%;
+  width: 6%;
   transition: 0.2s;
 }
 
@@ -53,29 +52,13 @@
 }
 
 .bicicletas img {
+  display: block;
   height: 470px;
-  max-width: 100%;
   object-fit: cover;
   object-position: right;
 }
 
 /* Responsivo */
-
-@media (max-width: 1200px) {
-  .bicicletas h2 {
-    font-size: 48px;
-  }
-
-  .bicicletas img {
-    height: 400px;
-  }
-}
-
-@media (max-width: 1030px) {
-  .bicicletas img {
-    height: 350px;
-  }
-}
 
 @media (max-width: 1000px) {
   .bicicletas img {
@@ -83,10 +66,33 @@
   }
 }
 
-@media (max-width: 950px) {
-  .bicicletas ul {
-    overflow-x: auto;
+@media (max-width: 900px) {
+  .bicicletasconteudo h2 {
+    font-size: 50px;
+  }
+
+  .bicicletas h3 {
+    font-size: 26px;
+  }
+
+  .bicicletaslistas ul {
+    gap: 20px;
+    overflow-x: scroll;
+    margin-bottom: -100px;
   }
 }
 
-/* Resolver responsivo da galeria de imagens bicicletas */
+@media (max-width: 800px) {
+  .bicicletasconteudo h2 {
+    font-size: 40px;
+    margin-top: -20px;
+  }
+
+  .bicicletas h3 {
+    font-size: 24px;
+  }
+
+  .bicicletas li span {
+    margin-left: 20px;
+  }
+}
